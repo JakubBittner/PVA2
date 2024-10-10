@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Služby - Autodílna Lumír Dak</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+        }
+
+        nav {
+            background-color: #292b2c;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            margin: 0 20px;
+            font-size: x-large;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f4a300;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem;
+            background: linear-gradient(to right, #292b2c, #2e3131);
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #f4f4f4;
+            margin-bottom: 0;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #292b2c;
+            margin-bottom: 1rem;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: #d1d1d1;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card h3 {
+            font-size: 1.6rem;
+            color: #292b2c;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #292b2c;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo"><i class="fa-solid fa-screwdriver-wrench fa-2xl" style="color: #fafafa;"></i></div> 
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Domů</a></li>
+            <li><a href="./lumirdaksluzby.html">Služby</a></li>
+            <li><a href="./lumirdakspoluprace.html">Spolupráce</a></li>
+        </ul>
+    </nav>
+
+    
+    <header>
+        <h1>Naše Služby</h1>
+        <p>Poskytujeme širokou škálu služeb pro vaše vozidlo, včetně mechanických, lakýrnických a karosářských prací.</p>
+    </header>
+
+    
+    <section id="sluzby">
+        <h2>Co nabízíme</h2>
+        <div class="services">
+            
+            <div class="service-card">
+                <h3>Automechanické práce</h3>
+                <p>- Mechanické opravy motorů, převodovek a podvozkových částí</p>
+                <p>- Diagnostika elektronických částí</p>
+                <p>- Servis všech značek osobních a dodávkových vozidel</p>
+                <p>- Výměna olejů, brzdových kotoučů a další</p>
+            </div>
+
+            
+            <div class="service-card">
+                <h3>Lakýrnické práce</h3>
+                <p>- Lakování karosérie vozidel i tuningových doplňků</p>
+                <p>- Tmelení nerovností a leštění karosérií</p>
+                <p>- Opravy laků, lakování veteránů</p>
+            </div>
+
+            
+            <div class="service-card">
+                <h3>Pneuservisní práce</h3>
+                <p>- Montáž a demontáž pneumatik</p>
+                <p>- Opravy defektů a vyvážení pneumatik</p>
+                <p>- Kompletní pneuservisní práce</p>
+            </div>
+
+            
+            <div class="service-card">
+                <h3>Karosářské práce</h3>
+                <p>- Karosářské opravy motorových vozidel po nehodách</p>
+                <p>- Opravy na rovnacím rámu</p>
+                <p>- Ochrana vozu nástřikem spodku a dutin</p>
+            </div>
+
+            
+            <div class="service-card">
+                <h3>Příprava na STK</h3>
+                <p>- Příprava vozidla na technickou kontrolu</p>
+                <p>- Kontrola emisních systémů</p>
+                <p>- Zajištění STK a emisní kontroly</p>
+            </div>
+
+            
+            <div class="service-card">
+                <h3>Pojišťovací služby</h3>
+                <p>- Pomoc s vyřízením povinného a havarijního pojištění</p>
+                <p>- Spolupráce s pojišťovnami Kooperativa a ČPP</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <h3>Kontaktujte nás</h3>
+        <p>Email: info@lumirdak.cz | Tel: +420 123 456 789</p>
+        <p>Adresa: Autodílna Lumír Dak, Ulice 123, Město, PSČ</p>
+        <p>Otevírací doba: Po-Pá 8:00 - 17:00</p>
+    </footer>
+</body>
+</html>
